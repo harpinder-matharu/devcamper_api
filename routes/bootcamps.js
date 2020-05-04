@@ -23,6 +23,7 @@ router
   .route('/')
   .get(advanceResults(Bootcamp, 'courses'), getBootcamps)
   .post(createBootcamp);
+
 router
   .route('/:id')
   .get(getBootcamp)
